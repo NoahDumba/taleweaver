@@ -8,15 +8,20 @@ This project is being developed as the editor core for [2Tale Writer's Portal](h
 
 ## Contributing
 
-This project can be run for development purpose by building the editor core and running the React example:
+This project can be run for development purpose by building the editor core, react package and running the React example. You will need three different terminal windows running to run up the app:
 
 ```
 # In packages/core
 npm install  # Install dev dependencies
 npm run dev  # Build in watch mode
 
+# In packages/react
+npm install  # Install dev dependencies
+npm run dev  # Build in watch mode
+
 # In examples/taleweaver-example-react
 npm install  # Install dependencies
+npm link ../../packages/react/node_modules/react  # Link different React packages 
 npm start  # Start dev server (create-react-app)
 ```
 
